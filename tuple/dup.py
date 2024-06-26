@@ -1,0 +1,5 @@
+t1 = (2,4,6,7,2,3,4)
+set = set(t1)
+t2 = tuple(set)
+print(type(t2))
+print(t2)
