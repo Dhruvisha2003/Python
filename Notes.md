@@ -13,6 +13,7 @@
 
 2. tupple 
  => Tuples are written with round brackets.
+ => Tuples are unchangable.
  
 3. dictionary
 4. set
