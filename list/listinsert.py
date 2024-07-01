@@ -23,15 +23,3 @@ list2 = [2,45,67,8 ,4,92]
 # s1={21,22,23}
 # del s
 # print(s)
-
-d1 = {"Monday", "Friday", "Saturday", "Sunday","Sunday"}
-d2={"Monday", "Tuesday", "Wednesday"} 
-
-# # print(d1&d2)
-# print(d1.intersection(d2))
-
-# d1.intersection_update(d2)
-# print(d1)
-# print(d1-d2)
-# print(d1.symmetric_difference_update(d2))
-print(d1)
