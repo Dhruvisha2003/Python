@@ -7,4 +7,4 @@ sum = 0
 
 for i in d1.values():
     sum = sum + i
-print(sum)
+print('Sum of all values :',sum)
