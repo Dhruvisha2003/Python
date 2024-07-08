@@ -3,6 +3,7 @@
 #pandas(fot files)
 #matplotlib(for graphs)
 #tkinter(for develop apps)
+#scipy
 
 print("hello")
 a=10
