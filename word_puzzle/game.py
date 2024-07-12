@@ -34,12 +34,10 @@ from random import *
 import random
 spelling = 'mango' 
 extra_letter = 'abcdefghijklmnopqrstuvwxyz'
-
-# length = len(spelling)*1
-# for i in range(length):
-#     selected = random.shuffle(extra_letter)
-
-selected = random.sample(extra_letter,len(spelling)*1)
+length = len(spelling)*1
+for i in range(length):
+    selected = random.shuffle(extra_letter)
+# selected = random.sample(extra_letter,len(spelling)*1)
 word = list(spelling) + selected
 
 # for i in range(len(spelling)*2):
@@ -48,7 +46,7 @@ word = list(spelling) + selected
 #     else:
 #         word.append(extra_letter[i])
 
-random.shuffle(word)
+shuffle(word)
 print(word)
 guess = input('Guess the word : ')
 # guess_list = list(guess)
