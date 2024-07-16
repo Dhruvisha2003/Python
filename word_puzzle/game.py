@@ -32,13 +32,14 @@ from random import *
 #     print('You Lost')
 
 import random
-spelling = 'mango' 
+spelling = ['pizza','dance','food','airport','plant','flower','book','cat','clothes','river','tree','zoo']
+word_spelling = random.choice(spelling)
 extra_letter = 'abcdefghijklmnopqrstuvwxyz'
-length = len(spelling)*1
-for i in range(length):
-    selected = random.shuffle(extra_letter)
-# selected = random.sample(extra_letter,len(spelling)*1)
-word = list(spelling) + selected
+# length = len(word_spelling)*1
+# for i in range(length):
+#     selected = random.shuffle(extra_letter)
+selected = random.sample(extra_letter,len(word_spelling)*1)
+word = list(word_spelling) + selected
 
 # for i in range(len(spelling)*2):
 #     if len(word) < len(spelling):
@@ -48,9 +49,10 @@ word = list(spelling) + selected
 
 shuffle(word)
 print(word)
+print(word_spelling)
 guess = input('Guess the word : ')
 # guess_list = list(guess)
-if guess == spelling:
+if guess == word_spelling:
     print('You Won')
 else:
     print('You Lost')
