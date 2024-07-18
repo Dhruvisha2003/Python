@@ -34,3 +34,22 @@ print(list1)
 list = [2,4,3,2,4,5]
 list[0] = 2 
 list[-1] = 5
+
+[mysql queries]
+
+suppose,Here we Create stud database and register name table
+we can create database and table from admin panel or like this,..
+1. Create database
+CREATE DATABASE stud;
+2. Create table
+CREATE TABLE register (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, name VARCHAR(30) , email VARCHAR(50), password VARCHAR(30), phone VARCHAR(30)/BIGINT)
+3. Insert data
+INSERT INTO register (name, email, password, phone) VALUES ('John', 'john@example.com
+, '123456', 1234567890)
+4. Select data
+SELECT * FROM register;
+SELECT name from register where id=1
+5. Delete data
+DELETE FROM register WHERE id=1;
+6. Update data
+UPDATE register SET name='John' WHERE id=1;
