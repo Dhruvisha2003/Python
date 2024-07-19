@@ -6,7 +6,6 @@
 # 5. if the user guesses the wrong letter, tell them they lost
 
 # import random
-
 # list_of_words = ['pizza','dance','food','airport','plant','flower','book','cat','clothes','river','tree','zoo']
 # word = random.choice(list_of_words)
 # print(word)
@@ -17,8 +16,7 @@
 #     print('You lost')
 
 
-from random import *
-
+# from random import *
 # spelling = ['t','r','e','e']
 # extra_letter = ['w','y','u','s','f','a']
 # word = spelling + extra_letter
@@ -31,27 +29,18 @@ from random import *
 # else :
 #     print('You Lost')
 
+
+from random import *
 import random
-spelling = ['pizza','dance','food','airport','plant','flower','book','cat','clothes','river','tree','zoo']
+spelling = ['pizza','dance','food','airport','plant','flower','book','cat','clothes','river','tree','zoo','action','active','eye','icecream','flow','random','head','ghost','lips','light','smile']
 word_spelling = random.choice(spelling)
 extra_letter = 'abcdefghijklmnopqrstuvwxyz'
-# length = len(word_spelling)*1
-# for i in range(length):
-#     selected = random.shuffle(extra_letter)
 selected = random.sample(extra_letter,len(word_spelling)*1)
 word = list(word_spelling) + selected
-
-# for i in range(len(spelling)*2):
-#     if len(word) < len(spelling):
-#         word.append(spelling[i])
-#     else:
-#         word.append(extra_letter[i])
-
 shuffle(word)
 print(word)
-print(word_spelling)
+# print(word_spelling)
 guess = input('Guess the word : ')
-# guess_list = list(guess)
 if guess == word_spelling:
     print('You Won')
 else:

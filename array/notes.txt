@@ -1,0 +1,9 @@
+An array is a collection of items where each item has its own index value, and the index starts from 0. 
+Python doesn't hve built-in support for array but we can import array and use them.
+array is an object in Python
+
+[ways to import or create array]
+1. import array
+2. from array import *
+3. import array as <any name>
+
