@@ -1,0 +1,4 @@
+Tkinter is most used method for developing GUI(Graphics User Interface) in python.
+Tkinter is a standard GUI library for Python.
+
+mainloop() === this method is used for run the application
