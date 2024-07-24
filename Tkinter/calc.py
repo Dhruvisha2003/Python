@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import *
+from tkinter import *   
 calc = tk.Tk()
 calc.title("Calculator")
 calc.geometry("300x280")
@@ -15,10 +15,13 @@ def displaydata(event):
     new_value = current_value + text
     dis.set(new_value)
    
-def result():
+def result(event):
     value = dis.get()
-    result = eval(value)
-    dis.set(result)
+    try:
+        output = eval(value)
+        dis.set(output)
+    except:
+        print('Error')
 
 b1 = Button(calc,text='AC',width=5)
 b1.place(x=30,y=50)
