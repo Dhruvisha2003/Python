@@ -10,7 +10,7 @@ def random_num():
    numbers = list(range(1, 9)) 
    shuffle(numbers)
    for i in numbers:
-      var.text=numbers[i]
+      var.set(numbers[i])
 
 label = Label(puzzle, text='Number Puzzle')
 label.place(x=150, y=30)
